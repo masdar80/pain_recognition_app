@@ -1,0 +1,15 @@
+If you are deploying the app to the Play Store, it's recommended to use app bundles or split the APK to reduce the APK size.
+    To generate an app bundle, run:
+        flutter build appbundle --target-platform android-arm,android-arm64,android-x64
+        Learn more on: https://developer.android.com/guide/app-bundle
+    To split the APKs per ABI, run:
+        flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
+
+
+        kill dart command
+        taskkill /F /IM dart.exe
+
+
+        icon
+        flutter pub get
+             flutter pub run flutter_launcher_icons:main
